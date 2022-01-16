@@ -7,6 +7,7 @@ import { Component, Input, OnInit } from '@angular/core';
 })
 export class CartellaComponent implements OnInit {
   @Input()est_cartella : number = 0;
+  @Input()vett_estratto : number[] = [];
   constructor() { }
 
   ngOnInit(): void {
