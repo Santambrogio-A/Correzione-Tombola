@@ -13,6 +13,11 @@ export class AppComponent {
 
     console.log(numero.value);
     this.estratto = Number(numero.value);
-    this.vett_estratto.push(this.estratto);
+
+    let found : Boolean = false;
+    for (const n of this.vett_estratto) {
+      if (n == this.estratto) found = true;
+    }
+    if(found == false) this.vett_estratto.push(this.estratto);
   }
 }
