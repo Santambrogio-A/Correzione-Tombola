@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'tombola';
+
+  estrai(numero : HTMLInputElement){
+
+console.log(numero.value);
+  }
 }

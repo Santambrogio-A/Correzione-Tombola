@@ -1,6 +1,7 @@
 <div>
-  <input type= "text"> <label> Numero estratto</label>
+  <input type="number"  #numero> 
+  <label> Numero estratto</label>
 </div>
 <div>
-  <button>Estrai</button>
+  <button (click)="estrai(numero)">Estrai</button>
 </div>
