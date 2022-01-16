@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-cartella',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./cartella.component.css']
 })
 export class CartellaComponent implements OnInit {
-
+  @Input()est_cartella : number = 0;
   constructor() { }
 
   ngOnInit(): void {
